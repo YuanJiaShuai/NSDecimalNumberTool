@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NSDecimalNumberTool_Example' do
+  pod 'NSDecimalNumberTool', :path => '../'
+
+  target 'NSDecimalNumberTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
