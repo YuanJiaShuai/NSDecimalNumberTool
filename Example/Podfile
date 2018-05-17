@@ -6,6 +6,6 @@ target 'NSDecimalNumberTool_Example' do
   target 'NSDecimalNumberTool_Tests' do
     inherit! :search_paths
 
-    
+#https://github.com/YuanJiaShuai/YJSSpecs.git
   end
 end

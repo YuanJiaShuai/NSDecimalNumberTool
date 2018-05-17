@@ -1,0 +1,6 @@
+framework module NSDecimalNumberTool {
+  umbrella header "NSDecimalNumberTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

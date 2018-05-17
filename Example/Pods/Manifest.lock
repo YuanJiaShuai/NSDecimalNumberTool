@@ -1,0 +1,16 @@
+PODS:
+  - NSDecimalNumberTool (0.1.0)
+
+DEPENDENCIES:
+  - NSDecimalNumberTool (from `../`)
+
+EXTERNAL SOURCES:
+  NSDecimalNumberTool:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NSDecimalNumberTool: e4f1cfd9bfc41def449dad347e8ff7137610a69e
+
+PODFILE CHECKSUM: e2623d7aedaabad42644833b26f79756cafefa68
+
+COCOAPODS: 1.4.0

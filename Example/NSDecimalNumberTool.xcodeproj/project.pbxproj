@@ -40,7 +40,7 @@
 		11D6BCDC243B837CA0C47ABF /* Pods-NSDecimalNumberTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDecimalNumberTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSDecimalNumberTool_Example/Pods-NSDecimalNumberTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1398345A6C324645FF76D2B9 /* Pods-NSDecimalNumberTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDecimalNumberTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSDecimalNumberTool_Example/Pods-NSDecimalNumberTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		481EA08A0442E1A441224B1B /* Pods-NSDecimalNumberTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDecimalNumberTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSDecimalNumberTool_Tests/Pods-NSDecimalNumberTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D5EA220BB356B7882ED2AF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D5EA220BB356B7882ED2AF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* NSDecimalNumberTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDecimalNumberTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +62,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3D9BF7579E6685F2ABC9B46 /* NSDecimalNumberTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NSDecimalNumberTool.podspec; path = ../NSDecimalNumberTool.podspec; sourceTree = "<group>"; };
-		C779F743DDE526F7B93D850E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B3D9BF7579E6685F2ABC9B46 /* NSDecimalNumberTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSDecimalNumberTool.podspec; path = ../NSDecimalNumberTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C779F743DDE526F7B93D850E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ED21BB4E09FF23810E02F384 /* Pods-NSDecimalNumberTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDecimalNumberTool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSDecimalNumberTool_Tests/Pods-NSDecimalNumberTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FF2825628C80F59AE24D210F /* Pods_NSDecimalNumberTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSDecimalNumberTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC4FEBC842F211B572F72D7 /* Pods_NSDecimalNumberTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSDecimalNumberTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +208,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				DE3028C54ADD58D69C677F52 /* [CP] Embed Pods Frameworks */,
+				A93E7D6625B94819A6899CD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +227,8 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				E42BF044B4162459DB8126A8 /* [CP] Embed Pods Frameworks */,
+				61D26AA9A713E73E08A1B43A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = YuanJiaShuai;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = GKE2HP46HP;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -312,6 +318,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		61D26AA9A713E73E08A1B43A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSDecimalNumberTool_Tests/Pods-NSDecimalNumberTool_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93E7D6625B94819A6899CD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSDecimalNumberTool_Example/Pods-NSDecimalNumberTool_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D93E431A5B141A198C62A1CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +382,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSDecimalNumberTool_Example/Pods-NSDecimalNumberTool_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42BF044B4162459DB8126A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSDecimalNumberTool_Tests/Pods-NSDecimalNumberTool_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -485,6 +536,7 @@
 			baseConfigurationReference = 1398345A6C324645FF76D2B9 /* Pods-NSDecimalNumberTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKE2HP46HP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDecimalNumberTool/NSDecimalNumberTool-Prefix.pch";
 				INFOPLIST_FILE = "NSDecimalNumberTool/NSDecimalNumberTool-Info.plist";
@@ -500,6 +552,7 @@
 			baseConfigurationReference = 11D6BCDC243B837CA0C47ABF /* Pods-NSDecimalNumberTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKE2HP46HP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDecimalNumberTool/NSDecimalNumberTool-Prefix.pch";
 				INFOPLIST_FILE = "NSDecimalNumberTool/NSDecimalNumberTool-Info.plist";
