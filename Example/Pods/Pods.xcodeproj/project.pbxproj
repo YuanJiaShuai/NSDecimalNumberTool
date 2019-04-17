@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1420D99A8F165CDE6E4A7CF36E492C26 /* NSDecimalNumberTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C10034F778810A30958F99A7D49905C3 /* NSDecimalNumberTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		497D1113AA40C5E8B7B29028AE130E6F /* Pods-NSDecimalNumberTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E569DEB47DBAD600FC8A0AB32F737419 /* Pods-NSDecimalNumberTool_Tests-dummy.m */; };
 		4BCD924FC90572A301ADC413F7DEC763 /* NSDecimalNumberTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D814CE65B1CFCB378BE709041B2C75 /* NSDecimalNumberTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AD6C1C5DCFA774B528F891BF2A5BC9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71EE94872266D1A200573280 /* NSString+YJSDecimalNumberTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EE94852266D1A200573280 /* NSString+YJSDecimalNumberTools.m */; };
+		71EE94882266D1A200573280 /* NSString+YJSDecimalNumberTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EE94862266D1A200573280 /* NSString+YJSDecimalNumberTools.h */; };
 		749E1090395605545BF84521907C4869 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7B9844C0E533E371A2CB31225D66BAE0 /* Pods-NSDecimalNumberTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6FC6648DE060636CF8550F02B98FA3 /* Pods-NSDecimalNumberTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAAC651778A5019D8FB6BBACB5FF18A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		ABD130B7AE498D734C3D89C8E77AF276 /* NSDecimalNumberTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 789BDDCD142865F27B60711E3409AC3E /* NSDecimalNumberTool-dummy.m */; };
 		ADBB32B161DC92B388F98891DBE19B0B /* Pods-NSDecimalNumberTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A096DA6601C6FF1DEB24FB2C68285D /* Pods-NSDecimalNumberTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBEF619A05A425692D13CB43D718CA93 /* Pods-NSDecimalNumberTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F94218B56D2972097DAEE8866C3E2EB /* Pods-NSDecimalNumberTool_Example-dummy.m */; };
-		EBC2B202F53EF1A07C4334E0C0948426 /* NSDecimalNumberTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44A72B050E6C0660DF732D031B1B2D /* NSDecimalNumberTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,40 +33,40 @@
 /* Begin PBXFileReference section */
 		07BFB8BD1A0241DFAD1EADD20FF80B1A /* Pods-NSDecimalNumberTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSDecimalNumberTool_Tests-resources.sh"; sourceTree = "<group>"; };
 		12A096DA6601C6FF1DEB24FB2C68285D /* Pods-NSDecimalNumberTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSDecimalNumberTool_Example-umbrella.h"; sourceTree = "<group>"; };
-		1850990BDE24BB5CA2DB1CE238BBE673 /* Pods_NSDecimalNumberTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSDecimalNumberTool_Tests.framework; path = "Pods-NSDecimalNumberTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1850990BDE24BB5CA2DB1CE238BBE673 /* Pods_NSDecimalNumberTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSDecimalNumberTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A57D687040F1A9A649F55EEE76F8685 /* Pods-NSDecimalNumberTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSDecimalNumberTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D90D8B9C725B615D95C8E781F949FA0 /* Pods-NSDecimalNumberTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSDecimalNumberTool_Example-resources.sh"; sourceTree = "<group>"; };
-		1E9C79142318F66B9C50444597484CA8 /* Pods-NSDecimalNumberTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NSDecimalNumberTool_Tests.modulemap"; sourceTree = "<group>"; };
-		2115740B73EF5DB0D7E06A40B97D8855 /* Pods-NSDecimalNumberTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NSDecimalNumberTool_Example.modulemap"; sourceTree = "<group>"; };
-		29305206EE009042238737C7D3817553 /* NSDecimalNumberTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDecimalNumberTool.modulemap; sourceTree = "<group>"; };
+		1E9C79142318F66B9C50444597484CA8 /* Pods-NSDecimalNumberTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NSDecimalNumberTool_Tests.modulemap"; sourceTree = "<group>"; };
+		2115740B73EF5DB0D7E06A40B97D8855 /* Pods-NSDecimalNumberTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NSDecimalNumberTool_Example.modulemap"; sourceTree = "<group>"; };
+		29305206EE009042238737C7D3817553 /* NSDecimalNumberTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NSDecimalNumberTool.modulemap; sourceTree = "<group>"; };
 		2F94218B56D2972097DAEE8866C3E2EB /* Pods-NSDecimalNumberTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSDecimalNumberTool_Example-dummy.m"; sourceTree = "<group>"; };
 		3436914AE026916DAABD9F455A36155A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B439D7F9684C1B732979F2733B67CC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E44A72B050E6C0660DF732D031B1B2D /* NSDecimalNumberTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDecimalNumberTools.m; path = NSDecimalNumberTool/Classes/NSDecimalNumberTools.m; sourceTree = "<group>"; };
-		516FEA146ECF2FB05B56A164FC86D0D8 /* Pods_NSDecimalNumberTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSDecimalNumberTool_Example.framework; path = "Pods-NSDecimalNumberTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		516FEA146ECF2FB05B56A164FC86D0D8 /* Pods_NSDecimalNumberTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSDecimalNumberTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53866EAE1E9F5BE893CAFB6258ABB0CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0D0E15F0828160573816463423C482 /* Pods-NSDecimalNumberTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSDecimalNumberTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		642408AEC914624BDC90E56F76DD476B /* NSDecimalNumberTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSDecimalNumberTool.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71EE94852266D1A200573280 /* NSString+YJSDecimalNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YJSDecimalNumberTools.m"; sourceTree = "<group>"; };
+		71EE94862266D1A200573280 /* NSString+YJSDecimalNumberTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YJSDecimalNumberTools.h"; sourceTree = "<group>"; };
 		73D814CE65B1CFCB378BE709041B2C75 /* NSDecimalNumberTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumberTool-umbrella.h"; sourceTree = "<group>"; };
 		75BACA51EEFAD2035E1774CCC41555DC /* Pods-NSDecimalNumberTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSDecimalNumberTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		789BDDCD142865F27B60711E3409AC3E /* NSDecimalNumberTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumberTool-dummy.m"; sourceTree = "<group>"; };
 		7984357063B0824CFDB3069E6F8B1B7A /* Pods-NSDecimalNumberTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSDecimalNumberTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		823497F2357FA9394B4D48F03D02773B /* Pods-NSDecimalNumberTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSDecimalNumberTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9208F6EAB10A7F5FCA83C1B62900586D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9208F6EAB10A7F5FCA83C1B62900586D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		935F27733BCFCA6BC71AABE039E2499A /* Pods-NSDecimalNumberTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSDecimalNumberTool_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9875FD57DB640066891D4B75A541E008 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9875FD57DB640066891D4B75A541E008 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F6FC6648DE060636CF8550F02B98FA3 /* Pods-NSDecimalNumberTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSDecimalNumberTool_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BA62400C5C853F3A65DB9EDD06B6A249 /* Pods-NSDecimalNumberTool_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSDecimalNumberTool_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		BC48C55FBBE2A50AF3032AB5F7F032CD /* Pods-NSDecimalNumberTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSDecimalNumberTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C10034F778810A30958F99A7D49905C3 /* NSDecimalNumberTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSDecimalNumberTools.h; path = NSDecimalNumberTool/Classes/NSDecimalNumberTools.h; sourceTree = "<group>"; };
 		C82DC37B6B08BD38C2B30C8DD20E6F9D /* NSDecimalNumberTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumberTool-prefix.pch"; sourceTree = "<group>"; };
 		CBCA8509374743B59D8C3D0B3583BE80 /* Pods-NSDecimalNumberTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSDecimalNumberTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D80539BFFFAC7F38CBD354ECF2DC368F /* NSDecimalNumberTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NSDecimalNumberTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D80539BFFFAC7F38CBD354ECF2DC368F /* NSDecimalNumberTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NSDecimalNumberTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E569DEB47DBAD600FC8A0AB32F737419 /* Pods-NSDecimalNumberTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSDecimalNumberTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		EE28F28B45B98BC5C4B71AEE44416A9B /* Pods-NSDecimalNumberTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSDecimalNumberTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F16ED152F23E6215C626CCAFFD32E725 /* NSDecimalNumberTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSDecimalNumberTool.framework; path = NSDecimalNumberTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16ED152F23E6215C626CCAFFD32E725 /* NSDecimalNumberTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSDecimalNumberTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,8 +214,8 @@
 		E3E11F697B86B5FFA02310BFE7B6A427 /* NSDecimalNumberTool */ = {
 			isa = PBXGroup;
 			children = (
-				C10034F778810A30958F99A7D49905C3 /* NSDecimalNumberTools.h */,
-				4E44A72B050E6C0660DF732D031B1B2D /* NSDecimalNumberTools.m */,
+				71EE94862266D1A200573280 /* NSString+YJSDecimalNumberTools.h */,
+				71EE94852266D1A200573280 /* NSString+YJSDecimalNumberTools.m */,
 				A969654F2F96FE45834A49CB33534CF1 /* Pod */,
 				2775D4B360DEBCA904A1651D52EB5053 /* Support Files */,
 			);
@@ -238,8 +238,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EE94882266D1A200573280 /* NSString+YJSDecimalNumberTools.h in Headers */,
 				4BCD924FC90572A301ADC413F7DEC763 /* NSDecimalNumberTool-umbrella.h in Headers */,
-				1420D99A8F165CDE6E4A7CF36E492C26 /* NSDecimalNumberTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -347,8 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EE94872266D1A200573280 /* NSString+YJSDecimalNumberTools.m in Sources */,
 				ABD130B7AE498D734C3D89C8E77AF276 /* NSDecimalNumberTool-dummy.m in Sources */,
-				EBC2B202F53EF1A07C4334E0C0948426 /* NSDecimalNumberTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

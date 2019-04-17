@@ -1,17 +1,17 @@
 //
-//  NSDecimalNumberTools.m
-//  NSNumberFormatterDemo
+//  NSString+YJSDecimalNumberTools.m
+//  NSDecimalNumberTool_Example
 //
-//  Created by apple on 2018/5/17.
-//  Copyright © 2018年 投星信息. All rights reserved.
+//  Created by yjs on 2019/4/17.
+//  Copyright © 2019 YuanJiaShuai. All rights reserved.
 //
 
-#import "NSDecimalNumberTools.h"
+#import "NSString+YJSDecimalNumberTools.h"
 
-@implementation NSDecimalNumberTools
+@implementation NSString (YJSDecimalNumberTools)
 
-+ (NSString *)stringOfDoubleValueAfterPoint:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toDoubleValuePointZeroToLine{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"--";
@@ -19,8 +19,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfDoubleValueAfterPointDefaultZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toDoubleValuePointZeroToZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.positiveFormat = @"#.00";
@@ -28,8 +28,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfDoubleValueAfterPointRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toDoubleValuePointZeroToLineAndRemoveEndZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"--";
@@ -37,8 +37,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfDoubleValueAfterPointDefaultZeroRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toDoubleValuePointZeroToZeroAndRemoveEndZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"0";
@@ -46,8 +46,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfThreeValueAfterPoint:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toThreeValuePointZeroToLine{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"--";
@@ -55,8 +55,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfThreeValueAfterPointDefaultZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toThreeValuePointZeroToZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.positiveFormat = @"#.000";
@@ -64,8 +64,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfThreeValueAfterPointRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toThreeValuePointZeroToLineAndRemoveEndZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"--";
@@ -73,8 +73,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringOfThreeValueAfterPointDefaultZeroRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toThreeValuePointZeroToZeroAndRemoveEndZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"0.000";
@@ -82,8 +82,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringToPercentageWithDoubleValueAfterPointRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toPercentageWithDoublePointZeroToLine{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.zeroSymbol = @"--";
@@ -91,8 +91,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringToPercentageWithDoubleValueAfterPointDefaultZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toPercentageWithDoublePointZeroToZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:2 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.positiveFormat = @"#.00%";
@@ -100,8 +100,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringToPercentageWithThreeValueAfterPointRemoveEndZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toPercentageWithThreePointZeroToLine{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.positiveFormat = @"#.000%";
@@ -109,8 +109,8 @@
     return [formatter stringFromNumber:[valueNum decimalNumberByRoundingAccordingToBehavior:handler]];
 }
 
-+ (NSString *)stringToPercentageWithThreeValueAfterPointDefaultZero:(NSString *)value{
-    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:value];
+- (NSString *)toPercentageWithThreePointZeroToZero{
+    NSDecimalNumber * valueNum = [NSDecimalNumber decimalNumberWithString:self];
     NSDecimalNumberHandler * handler = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:3 raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:YES];
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc]init];
     formatter.positiveFormat = @"#.000%";
