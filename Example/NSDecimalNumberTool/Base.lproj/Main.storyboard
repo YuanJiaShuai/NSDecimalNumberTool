@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +18,38 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Rf-1ZE">
+                                <rect key="frame" x="16" y="64" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-4M-iih">
+                                <rect key="frame" x="166.5" y="128" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js9-nS-JMO">
+                                <rect key="frame" x="172" y="180" width="31" height="30"/>
+                                <state key="normal" title="确定"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rc8-4M-iih" firstAttribute="top" secondItem="CCz-Rf-1ZE" secondAttribute="bottom" constant="30" id="3Md-gb-m4v"/>
+                            <constraint firstItem="CCz-Rf-1ZE" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="3lH-DR-BeH"/>
+                            <constraint firstItem="js9-nS-JMO" firstAttribute="top" secondItem="Rc8-4M-iih" secondAttribute="bottom" constant="31" id="HRq-oo-4VK"/>
+                            <constraint firstItem="CCz-Rf-1ZE" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="P9L-9n-gW9"/>
+                            <constraint firstItem="Rc8-4M-iih" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="W0g-R4-8Dy"/>
+                            <constraint firstItem="CCz-Rf-1ZE" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="64" id="nx6-Q0-hfj"/>
+                            <constraint firstItem="js9-nS-JMO" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="uis-Ks-Fqq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-52" y="192.95352323838082"/>
         </scene>
     </scenes>
 </document>

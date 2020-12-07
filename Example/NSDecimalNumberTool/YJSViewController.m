@@ -7,6 +7,7 @@
 //
 
 #import "YJSViewController.h"
+#import "NSString+YJSDecimalNumberTools.h"
 
 @interface YJSViewController ()
 

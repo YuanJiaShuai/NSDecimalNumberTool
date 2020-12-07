@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6A13C2982D163178DC271907 /* Pods_NSDecimalNumberTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC4FEBC842F211B572F72D7 /* Pods_NSDecimalNumberTool_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		71FEFDEE2487350D00B1D193 /* NSString+YJSDecimalNumberTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FEFDEC2487350C00B1D193 /* NSString+YJSDecimalNumberTools.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C53F10B777FA627065DC8C4A /* Pods_NSDecimalNumberTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2825628C80F59AE24D210F /* Pods_NSDecimalNumberTool_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71FEFDEC2487350C00B1D193 /* NSString+YJSDecimalNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YJSDecimalNumberTools.m"; sourceTree = "<group>"; };
+		71FEFDED2487350D00B1D193 /* NSString+YJSDecimalNumberTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YJSDecimalNumberTools.h"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3D9BF7579E6685F2ABC9B46 /* NSDecimalNumberTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSDecimalNumberTool.podspec; path = ../NSDecimalNumberTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C779F743DDE526F7B93D850E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YJSViewController.h */,
 				6003F5A6195388D20070C39A /* YJSViewController.m */,
+				71FEFDED2487350D00B1D193 /* NSString+YJSDecimalNumberTools.h */,
+				71FEFDEC2487350C00B1D193 /* NSString+YJSDecimalNumberTools.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -251,7 +256,7 @@
 				ORGANIZATIONNAME = YuanJiaShuai;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = GKE2HP46HP;
+						DevelopmentTeam = LBPG6T5755;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -409,6 +414,7 @@
 			files = (
 				6003F59E195388D20070C39A /* YJSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YJSViewController.m in Sources */,
+				71FEFDEE2487350D00B1D193 /* NSString+YJSDecimalNumberTools.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +543,7 @@
 			baseConfigurationReference = 1398345A6C324645FF76D2B9 /* Pods-NSDecimalNumberTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GKE2HP46HP;
+				DEVELOPMENT_TEAM = LBPG6T5755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDecimalNumberTool/NSDecimalNumberTool-Prefix.pch";
 				INFOPLIST_FILE = "NSDecimalNumberTool/NSDecimalNumberTool-Info.plist";
@@ -553,7 +559,7 @@
 			baseConfigurationReference = 11D6BCDC243B837CA0C47ABF /* Pods-NSDecimalNumberTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GKE2HP46HP;
+				DEVELOPMENT_TEAM = LBPG6T5755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDecimalNumberTool/NSDecimalNumberTool-Prefix.pch";
 				INFOPLIST_FILE = "NSDecimalNumberTool/NSDecimalNumberTool-Info.plist";
